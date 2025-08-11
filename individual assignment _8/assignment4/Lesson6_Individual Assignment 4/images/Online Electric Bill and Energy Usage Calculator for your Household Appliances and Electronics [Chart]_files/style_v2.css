@@ -1,0 +1,143 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  color: #585858;
+  font-family: "Montserrat", sans-serif;
+}
+container-fluid {
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled,
+#header.header-pages {
+  height: 60px;
+  padding: 10px 0;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #5481b0;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 7px 0;
+  max-height: 60px;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+}
+
+/* MeridianOutpost BreadcrumbTrail Section
+--------------------------------*/
+#MO-header {
+	z-index: 997;
+    transition: all .5s;
+    background: #fff;
+    box-shadow: 0 0 30px rgb(127 137 161 / 30%);
+}
+
+#MO-breadcrumb {
+	background-color: #e9ecef;
+	padding: 10px 5px 5px 10px;
+	font-size: 1.0em;
+}
+
+#MO-body {
+	margin: 175px 0px 0px 0px;
+}
+
+#MO_adsense_sidebar {
+	text-align: center!important;
+}
+.MO-pagetitle {
+	font-size: 30px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+/*--------------------------------------------------------------
+# BEGIN - Addresses CLS (Cumulative Layout Shift) issue with Google Adsense leaderboard ads
+# Reference: https://mediarealm.com.au/articles/google-adsense-reducing-cls-cumulative-layout-shift/
+--------------------------------------------------------------*/
+#ad-leaderboard {
+	min-height: 266px;
+}
+@media screen and (min-width:40em) {
+	#ad-leaderboard {
+		min-height: 200px;
+	}
+}
+/*--------------------------------------------------------------
+# END - Addresses CLS (Cumulative Layout Shift) issue with Google Adsense leaderboard ads
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991px) {
+  #header {
+    height: 60px;
+    padding: 10px 0;
+  }
+
+  #header .logo h1 {
+    font-size: 28px;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-header p {
+    width: 100%;
+  }
+}

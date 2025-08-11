@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Record Store</title>
+    <!--            Author: Christine Bartfeld -->
+    <!-- Date of creation: July 10, 2025 -->
+    <!--            About:Band website. -->
+  </head>
+  <nav>
+  <ul>
+    <li><a href=index.html>Shop</a></li>
+    <li><a href=store.html>About </a></li>
+  </ul>
+</nav>
+
+  <style>
+
+    nav {
+    background-color: darkblue;
+    border-bottom: 1px solid white;
+    
+  }
+
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: -8px;
+  }
+  a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  a:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+  }
+    body {
+      background-color: rgb(204, 226, 239);
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+    h2 {
+      color: darkmagenta;
+      text-align: center;
+    }
+
+    h3 {
+      color: darkmagenta;
+      text-align: center;
+    }
+
+    button {
+      color: darkorchid;
+      width: 250px;
+      height: 28px;
+    }
+    .my-container {
+     
+      text-align: center;
+      align-items: center;
+    }
+    .grid-container {
+      display: flex;
+      justify-content: stretch;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+      margin: 5px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+   
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0452aa;
+  color: white;
+}
+
+
+   .box-container {
+      color: darkblue;
+      font-size: 30px;
+    }
+
+    address {
+      font-size: 35px;
+      color: darkmagenta;
+    }
+
+   .content{
+        background-color: rgb(212, 212, 230);
+        color: #030894;
+        padding: 30px 10px;
+        text-align: center;
+
+    }
+
+    .footer{
+        color: #030894;
+        text-align: center;
+      text-shadow: 10px;
+
+    }
+  </style>
+
+  <body>
+    
+
+  <h1>Welcome to the Acoustic Only Record Store</h1>
+  <h2>Experience the Best in Acoustic Music</h2>
+  <div class="my-container">
+    <button>&rarr; Purchase Here</button>
+  </div>
+  <h3>Featured Albums</h3>
+
+  <div class="grid-container">
+    <img src="images/acoustic album.jpg" alt="acoustic album" width="250" />
+    <img src="images/acoustic hits.jpg" alt="acoustic hits" width="250" />
+    <img src="images/acoustic no 1.webp" alt="acoustic no 1" width="250" />
+    <img src="images/acoustic rock ballads.jpg" alt="acoustic ballads" width="250" />
+    <img src="images/acoustic rock.jpg" alt="acoustic rock" width="250" />
+  </div>
+
+  <table id="customers">
+  <tr>
+    <th>Artist Name</th>
+    <th>Album Name</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>John Plays</td>
+    <td>The Best Acoustic Album Ever</td>
+    <td>$24.99 USD </td>
+  <tr>
+    <td>Ana Devine</td>
+    <td>Acoustic Rock Hits Greatest</td>
+    <td>$24.99 USD</td>
+  </tr>
+  <tr>
+    <td>Dan Rocks</td>
+    <td>The Number One Acoustic Rock Album</td>
+    <td>$24.99 USD</td>
+  </tr>
+  <tr>
+    <td>Genna Jams</td>
+    <td>Acoustic Rock Ballads</td>
+    <td>$19.99 USD</td>
+  </tr>
+
+  <tr>
+    <td>Frankie Sings</td>
+    <td>Acoustic Rock</td>
+    <td>$19.99 USD</td>
+  </tr>
+  </table>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+ <div class="content">
+        <h2> Let's Stay Connected</h2>
+     
+        <address>
+      <span>Contact us at: </span> <br />
+      acousticonly@music.com <br />
+      <br />
+
+      Visit our store: <br />
+      100 Miami Ave <br />
+      Miami, Fl 33027
+    </div>
+
+     <footer class="footer">
+      <p>&copy; 2025 Acoustic Only Record Store</p>
+    </footer>
+  <body/>
+
+  
+</html>

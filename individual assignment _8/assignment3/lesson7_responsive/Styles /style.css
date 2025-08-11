@@ -1,0 +1,209 @@
+body {
+  background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
+  color: crimson;
+}
+
+h2 {
+  text-align: center;
+  color: crimson;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  color: crimson;
+  font-size: 30px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 15px;
+}
+
+h6 {
+  color: crimson;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+}
+
+@media all and (min-width: 600px) and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .directions {
+    text-align: center; /* Default center alignment for small screens */
+    padding: 20px;
+  }
+
+  .directions,
+  .menu .contact {
+    grid-area: main;
+    width: 48%;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  header h1,
+  header h2,
+  header h3 {
+    font-size: larger;
+  }
+}
+
+.contact {
+  background-color: hwb(357 22% 60% / 0.489);
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  color: crimson;
+  text-align: center;
+  text-shadow: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 150px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.menu-item p {
+  margin: auto;
+  font-size: 18px;
+  flex: 1;
+}
+
+.menu-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+.menu-text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Tablet */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 50px 150px 150px 50px;
+    grid-template-areas:
+      "header"
+      "main"
+      "body"
+      "footer";
+    padding: auto;
+  }
+}
+
+/* Phone */
+@media all and (max-width: 599px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "body"
+      "footer";
+    padding: 5px;
+  }
+}
+
+/* Default: hide the image */
+.mobile-only {
+  display: none;
+}
+
+/* Show only on mobile */
+@media all and (max-width: 599px) {
+  .mobile-only {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+  }
+}
+
+iframe {
+  display: block;
+}
+
+@media all and (max-width: 599px) {
+  iframe {
+    display: none;
+  }
+}
+#menu {
+  display: block;
+}
+
+/* On mobile: hide the menu */
+@media screen and (max-width: 599px) {
+  #menu {
+    display: none;
+  }
+  #contact {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  img[src="images/empanada family rest.jpg"] {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  img.desktop-large {
+    width: 20%; /* Larger width on desktop */
+    max-width: none;
+    margin: 20px auto; /* Nicely centered */
+  }
+}
